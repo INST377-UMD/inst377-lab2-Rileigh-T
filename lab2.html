@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title> Contact Form</title>
+        <style>
+            body{
+                background-color: plum;
+            }
+            .VideoGame-box {
+                margin-top: 50px;
+                margin-left: 100px;
+            }
+            input {
+                background-color: bisque;
+                color:rgb(129, 60, 151);
+                font-size: 30px;
+            }
+            .Name-box {
+                margin-top: 50px;
+                margin-right: 300px;
+                background-color: blueviolet;
+            }
+            .submitButton{
+                margin-left:550px;
+                margin-right:650px;
+            }
+            .submitButton input[type="submit"] {
+                background-color: black;
+                color: rgb(112, 23, 215);
+                font-size: 40px;
+            }
+            .submitButton input[type="submit"]:hover {
+                background-color: rgb(31, 102, 160);
+                color:rgb(47, 161, 83);
+            }
+        </style>
+    </head>
+
+    <body>
+        <H1> lab2 - Contact Me</H1>
+        <form name="Contact Form" method="get" action="lab2FormSubmitted.html">
+        <div class="Name-box">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            <br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+        </div>
+        <br>
+        <div class="VideoGame-box">
+            <label for="Videogame">Enter a video game thats not listed below:</label>
+            <input type="text" id="Videogame" required>
+        </div>
+        <br>
+        <label for="reason">Favorite Video Game:</label> <br>
+        <input type="radio" name="reason">Sports Games <br>
+        <input type="radio" name="reason">Fortnite <br>
+        <input type="radio" name="reason">Last of Us <br>
+        <br>
+        <div class="submitButton">
+            <input type="submit">
+        </div>
+        </form>
+    </body>
+</html>
